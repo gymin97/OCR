@@ -2,20 +2,24 @@
 OCR for traditional Han-gul.
 
 - Normally, OCR projects are carried out Object Detection and Classification sequentially, but due to time constraints, the project was carried out only Object Detection. 
-Classification is currently in progress.
+Classification is currently in progress.             
 
-To apply the OCR to the ancient Korean literature, follow these procedures
+- I tried to find and classify the text's contour through opencv without using the Detection model, but I followed the instructions below due to poor performance.    
+   - See "contour with Ben's preprocessing.ipynb" for source code for this.
+
+## To apply the OCR to the ancient Korean literature, follow these procedures
 
 1. Data preprocessing 
 2. Object Detection (yolov3)
 
-## 1. preprocessing 
+### 1. preprocessing 
 1. Data label convert to yolo label || Referenced [GitHub](https://github.com/ssaru/convert2Yolo)
 
    - My data was downloaded from this [link](https://aihub.or.kr/aidata/30753), and I had to convert it because the annotation is different from yolo.
    - In OCR, Object Detection model only needs to know the character location, but it also contains the code to create the name file used by yolo.          
 
-## 2. Object Detection (yolov3)
+   - 
+### 2. Object Detection (yolov3)
 #### 0) Environment
  ```
  Ubuntu 18.04
