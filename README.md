@@ -15,10 +15,10 @@ Classification is currently in progress.
 ### 1. preprocessing 
 1. Data label convert to yolo label || Referenced [GitHub](https://github.com/ssaru/convert2Yolo)
 
-   - My data was downloaded from this [link](https://aihub.or.kr/aidata/30753), and I had to convert it because the annotation is different from yolo.
-   - In OCR, Object Detection model only needs to know the character location, but it also contains the code to create the name file used by yolo.          
-
-   - 
+   - My data was downloaded from this [link](https://aihub.or.kr/aidata/30753), and I had to convert it because the annotation is different from yolo format.
+   - In OCR, Object Detection model only needs to know the character location, but it also contains the code to create the name file used by yolo format.          
+      See "con2 yolo (ai hub).ipynb" for label convert to yolo format.
+   
 ### 2. Object Detection (yolov3)
 #### 0) Environment
  ```
